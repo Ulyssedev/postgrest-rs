@@ -1,5 +1,5 @@
-pub use reqwest::Error;
-use reqwest::{
+pub use rquest::Error;
+use rquest::{
     header::{HeaderMap, HeaderValue},
     Client, Method, Response,
 };
@@ -551,7 +551,7 @@ impl Builder {
     }
 
     /// Build the PostgREST request.
-    pub fn build(mut self) -> reqwest::RequestBuilder {
+    pub fn build(mut self) -> rquest::RequestBuilder {
         if let Some(schema) = self.schema {
             let key = match self.method {
                 Method::GET | Method::HEAD => "Accept-Profile",

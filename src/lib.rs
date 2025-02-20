@@ -78,8 +78,8 @@ mod builder;
 mod filter;
 
 pub use builder::Builder;
-use reqwest::header::{HeaderMap, HeaderValue, IntoHeaderName};
-use reqwest::Client;
+use rquest::header::{HeaderMap, HeaderValue, IntoHeaderName};
+use rquest::Client;
 
 #[derive(Clone, Debug)]
 pub struct Postgrest {

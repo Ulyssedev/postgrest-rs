@@ -1,4 +1,6 @@
-# postgrest-rs
+# postgrest-rquest
+
+A fork of postgrest-rs using rquest instead of reqwest.
 
 [![Build](https://github.com/supabase/postgrest-rs/workflows/CI/badge.svg)](https://github.com/supabase/postgrest-rs/actions?query=branch%3Amaster)
 [![Crate](https://img.shields.io/crates/v/postgrest.svg)](https://crates.io/crates/postgrest)
@@ -13,7 +15,7 @@ Add this to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-postgrest = "1.0"
+postgrest = { git = "https://github.com/Ulyssedev/postgrest-rquest.git" }
 ```
 
 Simple example:
